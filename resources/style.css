@@ -61,9 +61,18 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: var(--hover-color);
+}
+
+section {
+  padding: 1rem 0;
+}
+
 .about-me-container {
   display: flex;
   padding: 2rem 0;
+  align-items: center;
 }
 
 .about-me-text-container {
@@ -79,4 +88,15 @@ h2 {
   margin: 0;
   padding: 0;
   color: var(--heading-color)
+}
+
+.about-site-container {
+  display: flex;
+  align-items: center;
+}
+
+.portrait-two {
+  width: 19rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
 }
