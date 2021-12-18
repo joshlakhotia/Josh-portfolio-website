@@ -15,6 +15,7 @@
 :root {
   --background-color: #E8F3F7;
   --heading-color: #3c6048;
+  --link-color: #3c6048;
   --hover-color: #8eb691;
   --text-color: #474742;
 }
@@ -23,18 +24,21 @@ html, body {
   height: 100%;
   background-color: var(--background-color);
   color: var(--text-color);
+  font-family: 'open_sans', sans-serif;
 }
 
 body {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   font-family: "open_sans", sans-serif;
+  line-height: 1.75rem;
 }
 
 nav {
   display: flex;
   color: var(--heading-color);
   align-items: center;
+  border-bottom: .1rem solid green;
 }
 
 #logo {
@@ -53,5 +57,26 @@ nav {
 
 a {
   text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+.about-me-container {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.about-me-text-container {
+  margin-right: 2rem;
+}
+
+.portrait {
+  border-radius: 1rem;
+  width: 19rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
   color: var(--heading-color)
 }
